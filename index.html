@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Liste d'Attente - iaNanoLeads</title>
+  <meta name="description" content="Inscrivez-vous à la liste d'attente iaNanoLeads. Transformez votre prospection B2B avec les meilleurs leads de la planète. Lancement imminent.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo-placeholder.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background animé -->
+  <div class="animated-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+  
+  <!-- Container principal -->
+  <main class="container">
+    <!-- Logo -->
+    <div class="logo-container fade-in">
+      <img src="images/logo-placeholder.png" alt="iaNanoLeads Logo" class="logo">
+    </div>
+    
+    <!-- Hero -->
+    <div class="hero fade-in">
+      <div class="badge-launch pulse">
+        <span class="badge-icon">🚀</span>
+        Lancement Imminent
+      </div>
+      
+      <h1 class="gradient-text">Rejoignez la Révolution B2B</h1>
+      
+      <p class="hero-subtitle">Inscrivez-vous maintenant et transformez votre prospection. Les meilleurs leads B2B de la planète vous attendent.</p>
+    </div>
+    
+    <!-- Valeur Proposition -->
+    <div class="value-props fade-in">
+      <div class="value-card glass-effect">
+        <div class="value-icon">💎</div>
+        <h3>Leads Illimités</h3>
+        <p>€49/mois</p>
+      </div>
+      
+      <div class="value-card glass-effect">
+        <div class="value-icon">✉️</div>
+        <h3>Emails Personnalisés</h3>
+        <p>Automatiquement</p>
+      </div>
+      
+      <div class="value-card glass-effect">
+        <div class="value-icon">📈</div>
+        <h3>ROI Garanti</h3>
+        <p>Dès Jour 1</p>
+      </div>
+    </div>
+    
+    <!-- Formulaire -->
+    <div class="form-container glass-effect fade-in" id="form-container">
+      <h2>Réservez Votre Place Maintenant</h2>
+      
+      <form id="waitlist-form">
+        <!-- Nom / Raison sociale -->
+        <div class="form-group">
+          <label for="nom">Nom complet / Raison sociale *</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom complet ou Raison sociale" required>
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email professionnel *</label>
+          <input type="email" id="email" name="email" placeholder="email@entreprise.com" required>
+        </div>
+        
+        <!-- Adresse -->
+        <div class="form-group">
+          <label for="adresse">Adresse complète *</label>
+          <input type="text" id="adresse" name="adresse" placeholder="Adresse complète" required>
+        </div>
+        
+        <!-- Code postal + Ville (2 colonnes sur desktop) -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="code-postal">Code postal *</label>
+            <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="ville">Ville *</label>
+            <input type="text" id="ville" name="ville" placeholder="Ville" required>
+          </div>
+        </div>
+        
+        <!-- Pays -->
+        <div class="form-group">
+          <label for="pays">Pays *</label>
+          <select id="pays" name="pays" required>
+            <option value="">Sélectionnez votre pays</option>
+            <optgroup label="Pays prioritaires">
+              <option value="France">🇫🇷 France</option>
+              <option value="Belgique">🇧🇪 Belgique</option>
+              <option value="Suisse">🇨🇭 Suisse</option>
+              <option value="Luxembourg">🇱🇺 Luxembourg</option>
+              <option value="Côte d'Ivoire">🇨🇮 Côte d'Ivoire</option>
+              <option value="Sénégal">🇸🇳 Sénégal</option>
+              <option value="Cameroun">🇨🇲 Cameroun</option>
+              <option value="Congo">🇨🇬 Congo</option>
+              <option value="Gabon">🇬🇦 Gabon</option>
+              <option value="Mali">🇲🇱 Mali</option>
+              <option value="Burkina Faso">🇧🇫 Burkina Faso</option>
+            </optgroup>
+            <optgroup label="Autres pays (A-Z)">
+              <option value="Allemagne">🇩🇪 Allemagne</option>
+              <option value="Espagne">🇪🇸 Espagne</option>
+              <option value="Italie">🇮🇹 Italie</option>
+              <option value="Portugal">🇵🇹 Portugal</option>
+              <option value="Royaume-Uni">🇬🇧 Royaume-Uni</option>
+              <option value="Canada">🇨🇦 Canada</option>
+              <option value="États-Unis">🇺🇸 États-Unis</option>
+              <!-- Ajouter TOUS autres pays alphabétique -->
+            </optgroup>
+          </select>
+        </div>
+        
+        <!-- Téléphone (Indicatif + Numéro) -->
+        <div class="form-group">
+          <label for="telephone">Numéro de téléphone *</label>
+          <div class="phone-input">
+            <select id="telephone-indicatif" name="telephone-indicatif" class="phone-code" required>
+              <option value="+33">🇫🇷 +33</option>
+              <option value="+32">🇧🇪 +32</option>
+              <option value="+41">🇨🇭 +41</option>
+              <option value="+352">🇱🇺 +352</option>
+              <option value="+225">🇨🇮 +225</option>
+              <option value="+221">🇸🇳 +221</option>
+              <option value="+237">🇨🇲 +237</option>
+              <option value="+242">🇨🇬 +242</option>
+              <option value="+241">🇬🇦 +241</option>
+              <option value="+223">🇲🇱 +223</option>
+              <option value="+226">🇧🇫 +226</option>
+              <option value="+49">🇩🇪 +49</option>
+              <option value="+34">🇪🇸 +34</option>
+              <option value="+39">🇮🇹 +39</option>
+              <option value="+351">🇵🇹 +351</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+1">🇺🇸 +1</option>
+              <!-- Ajouter TOUS indicatifs pays -->
+            </select>
+            <input type="tel" id="telephone" name="telephone" placeholder="6 12 34 56 78" required>
+          </div>
+        </div>
+        
+        <!-- Secteur d'activité -->
+        <div class="form-group">
+          <label for="secteur">Secteur d'activité *</label>
+          <select id="secteur" name="secteur" required>
+            <option value="">Sélectionnez votre secteur</option>
+            <option value="Tech / Startups">Tech / Startups</option>
+            <option value="Finance / Banque / Assurance">Finance / Banque / Assurance</option>
+            <option value="Retail / E-commerce">Retail / E-commerce</option>
+            <option value="Healthcare / Pharma">Healthcare / Pharma</option>
+            <option value="Immobilier">Immobilier</option>
+            <option value="Hôtellerie / Restauration / Tourisme">Hôtellerie / Restauration / Tourisme</option>
+            <option value="Éducation / Formation">Éducation / Formation</option>
+            <option value="Manufacturing / Industrie">Manufacturing / Industrie</option>
+            <option value="Logistique / Transport">Logistique / Transport</option>
+            <option value="Marketing / Communication">Marketing / Communication</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Construction / BTP">Construction / BTP</option>
+            <option value="Agriculture / Agro-alimentaire">Agriculture / Agro-alimentaire</option>
+            <option value="Média / Divertissement">Média / Divertissement</option>
+            <option value="Telecom">Telecom</option>
+            <option value="Assurance">Assurance</option>
+            <option value="Juridique">Juridique</option>
+            <option value="ONG / Non-profit">ONG / Non-profit</option>
+            <option value="Sport / Fitness">Sport / Fitness</option>
+            <option value="Mode / Luxe">Mode / Luxe</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        
+        <!-- Leads souhaités par mois -->
+        <div class="form-group">
+          <label for="leads-par-mois">Nombre de leads souhaités par mois *</label>
+          <select id="leads-par-mois" name="leads-par-mois" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="Moins de 50 leads/mois">Moins de 50 leads/mois</option>
+            <option value="50 - 100 leads/mois">50 - 100 leads/mois</option>
+            <option value="100 - 500 leads/mois">100 - 500 leads/mois</option>
+            <option value="500 - 1000 leads/mois">500 - 1000 leads/mois</option>
+            <option value="Plus de 1000 leads/mois">Plus de 1000 leads/mois</option>
+            <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+          </select>
+        </div>
+        
+        <!-- Source découverte (Optionnel) -->
+        <div class="form-group">
+          <label for="source-decouverte">Comment avez-vous connu iaNanoLeads ?</label>
+          <select id="source-decouverte" name="source-decouverte">
+            <option value="">Sélectionnez une option (optionnel)</option>
+            <option value="Recherche Google">Recherche Google</option>
+            <option value="Réseaux sociaux">Réseaux sociaux</option>
+            <option value="Bouche-à-oreille">Bouche-à-oreille</option>
+            <option value="Publicité en ligne">Publicité en ligne</option>
+            <option value="Événement professionnel">Événement professionnel</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        
+        <!-- Bouton submit -->
+        <button type="submit" id="submit-btn" class="btn-submit">
+          Réserver Ma Place Maintenant
+        </button>
+        
+        <!-- Footer formulaire -->
+        <p class="form-footer">En vous inscrivant, vous acceptez de recevoir des communications de iaNanoLeads.</p>
+      </form>
+    </div>
+    
+    <!-- Social Proof -->
+    <div class="social-proof fade-in">
+      <p class="social-proof-text">✨ Déjà 200+ entreprises en liste d'attente</p>
+      <p class="launch-date">Lancement prévu : <strong>Mai 2025</strong></p>
+    </div>
+    
+    <!-- Lien retour site principal -->
+    <div class="back-link fade-in">
+      <a href="https://iananoleads.com">← Retour au site iaNanoLeads</a>
+    </div>
+  </main>
+  
+  <!-- Scripts -->
+  <script src="js/form-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
